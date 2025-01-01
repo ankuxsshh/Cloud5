@@ -25,7 +25,7 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #111111;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e03a3c;
+  --accent-color: #fccb01;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -37,7 +37,7 @@
 :root {
   --nav-color: #212529;
   /* The default color of the main navmenu links */
-  --nav-hover-color: #e03a3c;
+  --nav-hover-color: #fccb01;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff;
   /* Used as the background color for mobile navigation menu */
@@ -45,7 +45,7 @@
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e03a3c;
+  --nav-dropdown-hover-color: #fccb01;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -72,10 +72,24 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+/* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scrolling for all browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
 }
 
 a {
@@ -103,7 +117,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #fccb01;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -708,7 +722,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
@@ -1281,6 +1295,8 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  height: 200px;
+  width: 400px;
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -1801,7 +1817,8 @@ section,
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2640,8 +2657,8 @@ section,
 
 .fixed-buttons {
   position: fixed;
-  bottom: 40px;
-  right: 25px;
+  bottom: 15px;
+  right: 20px;
   z-index: 2000;
   display: flex;
   flex-direction: column;
@@ -2666,7 +2683,7 @@ section,
 }
 
 .btn-whatsapp-pulse:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .btn-whatsapp-pulse i {
@@ -2674,13 +2691,13 @@ section,
 }
 
 .whatsapp-button {
-  background: #25d366;
-  border: 2px solid white;
+  background: #00c347;
+  border: 1px solid white;
 }
 
 .call-button {
-  background: #0f3f64;
-  border: 2px solid white;
+  background: #000000;
+  border: 1px solid white;
 }
 
 @keyframes pulse {
@@ -2692,3 +2709,4 @@ section,
     box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
   }
 }
+
