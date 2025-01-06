@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Contact | Cloud 5 Auto Concepts
+{% endblock %}
+
+{% block content %}
+  <!-- Background Image Section -->
+  <section id="background-section" class="d-flex align-items-center justify-content-center" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center center; height: 50vh; max-width: 100%; color: #fff; filter: grayscale(0.5);">
+    <div class="container text-center">
+      <p class="lead">We're here to help with all your car care needs!</p>
+    </div>
+  </section>
+  <!-- /Background Image Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact Us Form</h2>
+      <p>We’re here to help with all your car care needs! Whether you’re looking to enhance your vehicle’s performance, protect its exterior, or give it a fresh new look, our team at Cloud 5 Auto Concept is ready to provide expert service and personalized care.</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="row gy-4">
+            <div class="col-lg-12">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Visit Us</h3>
+                <p>Ashramam Rd, Uliyakovil East, Asramam, Kollam, Kerala 691008</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p>+91 90722 05000</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>cloud5autoconcepts@mail.com</p>
+              </div>
+            </div>
+            <!-- End Info Item -->
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Contact Form -->
+      </div>
+    </div>
+  </section>
+  <!-- /Contact Section -->
+{% endblock %}
