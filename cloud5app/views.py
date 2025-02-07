@@ -16,3 +16,6 @@ def gallery(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def rbrperformance(request):
+    return render(request, 'rbrperformance.html')

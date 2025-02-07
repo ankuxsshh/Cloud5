@@ -1,23 +1,28 @@
 {% extends 'base.html' %}Home | Cloud 5 Auto Concepts{% block content %}
   <main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <img src="https://images.unsplash.com/photo-1658244500543-47f32dc51dc2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" data-aos="fade-in" />
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+  <video autoplay loop muted playsinline class="hero-video" data-aos="fade-in">
+    <source src="static/img/banner.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 data-aos="fade-up" data-aos-delay="100">WELCOME TO CLOUD 5 AUTO CONCEPT</h2>
-            <p data-aos="fade-up" data-aos-delay="200">KOLLAM’S PREMIER CAR CARE DESTINATION !</p>
-            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=PUkAIAIzA0I" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 data-aos="fade-up" data-aos-delay="100">WELCOME TO CLOUD 5 AUTO CONCEPT</h2>
+        <p data-aos="fade-up" data-aos-delay="200">KOLLAM’S PREMIER CAR CARE DESTINATION !</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#about" class="btn-get-started">Get Started</a>
+          <a href="https://www.youtube.com/watch?v=PUkAIAIzA0I" class="glightbox btn-watch-video d-flex align-items-center">
+            <i class="bi bi-play-circle"></i><span>Watch Video</span>
+          </a>
         </div>
       </div>
-    </section>
-    <!-- /Hero Section -->
+    </div>
+  </div>
+</section>
+
 
     <!-- Stats Section -->
     <section id="stats" class="stats section">
@@ -151,42 +156,101 @@
           </script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide">
-              <img src="https://download.logo.wine/logo/BMW_India/BMW_India-Logo.wine.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://download.logo.wine/logo/Mercedes-Benz/Mercedes-Benz-Logo.wine.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://download.logo.wine/logo/Audi/Audi-Logo.wine.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://www.logo.wine/a/logo/Toyota_Canada_Inc./Toyota_Canada_Inc.-Logo.wine.svg" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://download.logo.wine/logo/Suzuki_Motorcycle_India_Limited/Suzuki_Motorcycle_India_Limited-Logo.wine.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://www.logo.wine/a/logo/Kia_Motors/Kia_Motors-Logo.wine.svg" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
               <img src="https://download.logo.wine/logo/Porsche/Porsche-Logo.wine.png" class="img-fluid" alt="" />
             </div>
             <div class="swiper-slide">
-              <img src="https://www.logo.wine/a/logo/Ford_Motor_Company/Ford_Motor_Company-Logo.wine.svg" class="img-fluid" alt="" />
+              <img src="https://download.logo.wine/logo/BMW_India/BMW_India-Logo.wine.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="static/img/clients/jaguarlogo.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="static/img/clients/benzlogo.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://uploads.vw-mms.de/system/production/images/vwn/030/145/images/7a0d84d3b718c9a621100e43e581278433114c82/DB2019AL01950_web_1600.jpg?1649155356" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGAu9G-NHvj_GvFLcaQ0VUaH1L4efIvktvhg&s" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="static/img/clients/jeeplogo.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://www.carlogos.org/logo/MG-logo-silver-2010-2560x1440.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://logowik.com/content/uploads/images/skoda-2023-new2313.logowik.com.webp" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="data:image/png;base64,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" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZIHi2IshVqNqSf5CJKO5TVAVLuqyqt_NKPg&s" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgeUI4uPpTnu5OJ_OEMNc9bPfyUE9IYU8mg&s" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://www.logo.wine/a/logo/Suzuki/Suzuki-Logo.wine.svg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzD9iBdEOivOry0YRMvDD5lHLFipaPcDRiQ&s" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/736x/90/88/a9/9088a9cdcf4bf9daaa774f4643ba4a4a.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <br />
-          <br />
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
     <!-- /Clients Section -->
 
+    <!-- About Section -->
+    <section id="about" class="about section section-bg dark-background">
+      <div class="container position-relative section-title">
+        <div class="row gy-5">
+          <h2><b class="" style="color:#e50913; font-size: 3rem;">RED BAND RACING</b>
+            <br>PERFORMANCE ENGINEERING
+          </h2>
+          <div class="content col-xl-12 d-flex flex-column">
+            <div class="row gy-4">
+              <!-- First Heading and Description -->
+              <div class="col-md-4 icon-box position-relative">
+                <i class="bi bi-speedometer2"></i>
+                <h4><a href="" class="stretched-link">Unparalleled Expertise, Unmatched Dedication</a></h4>
+                <p>At Red Band Racing, we are a group of automotive enthusiasts who have come together with a shared passion for pushing the boundaries of what's possible. Our team of skilled mechanics and tuning experts are driven by an unwavering commitment to delivering a driving experience that will leave you breathless.</p>
+              </div>
+              <!-- /First Heading and Description -->
+
+              <!-- Second Heading and Description -->
+              <div class="col-md-4 icon-box position-relative">
+                <i class="bi bi-tools"></i>
+                <h4><a href="" class="stretched-link">Transforming Vehicles, Transforming Lives</a></h4>
+                <p>Through our meticulous attention to detail and unwavering dedication, we have earned the trust of countless satisfied customers who have entrusted us with their prized possessions. We take great pride in breathing new life into every vehicle that passes through our doors, unlocking its true potential and delivering a level of performance that will redefine your expectations.</p>
+              </div>
+              <!-- /Second Heading and Description -->
+
+              <!-- Third Heading and Description -->
+              <div class="col-md-4 icon-box position-relative">
+                <i class="bi bi-heart-fill"></i>
+                <h4><a href="" class="stretched-link">Fueling Passion, Driving Limitless Automotive Journeys</a></h4>
+                <p>At the heart of Red Band Racing lies a deep, unquenchable thirst for the adrenaline rush that comes with pushing the limits of automotive engineering. Join us on this exhilarating journey as we transform your vehicle into a masterpiece that will ignite your senses and leave a lasting impression on the road.</p>
+              </div>
+              <!-- /Third Heading and Description -->
+            </div>
+            <a href="rbrperformance" class="about-btn align-self-center align-self-xl-start"><span>Know more</span> <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
     <!-- Tabs Section -->
     <section id="tabs" class="tabs section">
       <div class="container">
-        <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
+        <ul class="nav nav-tabs row d-flex">
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tabs-tab-1">
               <i class="bi bi-brightness-high-fill"></i>
@@ -214,8 +278,8 @@
         </ul>
         <!-- End Tab Nav -->
 
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          <div class="tab-pane fade active show" id="tabs-tab-1">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="tabs-tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Welcome to Cloud 5 Auto Concept</h3>
@@ -247,7 +311,7 @@
           </div>
           <!-- End Tab Content Item -->
 
-          <div class="tab-pane fade" id="tabs-tab-2">
+          <div class="tab-pane" id="tabs-tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Expert Care for Every Car</h3>
@@ -279,7 +343,7 @@
           </div>
           <!-- End Tab Content Item -->
 
-          <div class="tab-pane fade" id="tabs-tab-3">
+          <div class="tab-pane" id="tabs-tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Commitment to Quality</h3>
@@ -310,7 +374,7 @@
           </div>
           <!-- End Tab Content Item -->
 
-          <div class="tab-pane fade" id="tabs-tab-4">
+          <div class="tab-pane" id="tabs-tab-4">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
                 <h3>Visit Us in Kollam</h3>
@@ -347,7 +411,7 @@
     <!-- Services Section -->
     <section id="services" class="services section section-bg dark-background">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Services We Provide</h2>
         <p>Explore Our Wide Range of Premium Services :</p>
         <br />
@@ -359,7 +423,7 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-lightning icon flex-shrink-0"></i>
               <div>
@@ -370,7 +434,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-droplet icon flex-shrink-0"></i>
               <div>
@@ -381,7 +445,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-gem icon flex-shrink-0"></i>
               <div>
@@ -392,7 +456,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-recycle icon flex-shrink-0"></i>
               <div>
@@ -403,7 +467,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
@@ -414,7 +478,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
               <div>
@@ -425,7 +489,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
@@ -436,7 +500,7 @@
           </div>
           <!-- End Service Item -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-md-6">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-android2 icon flex-shrink-0"></i>
               <div>
@@ -456,7 +520,7 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Gallery</h2>
         <p>Cloud5 Auto Concept is an innovative, forward-thinking approach to automotive design, blending cutting-edge technology with sleek, futuristic aesthetics. The concept focuses on sustainability and efficiency, featuring electric powertrains, autonomous driving capabilities, and eco-friendly materials. Its dynamic design incorporates bold curves and minimalist lines, reflecting the future of mobility. Cloud5 Auto Concept aims to redefine the driving experience, offering smart, sustainable, and intuitive vehicles that cater to the needs of tomorrow’s drivers in an ever-evolving world.</p>
       </div>
@@ -464,7 +528,7 @@
 
       <div class="container">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="portfolio-filters isotope-filters">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">ECU & TCU</li>
             <li data-filter=".filter-product">Foam Wash</li>
@@ -473,7 +537,7 @@
           </ul>
           <!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 isotope-container">
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <img src="https://t3.ftcdn.net/jpg/06/41/73/20/360_F_641732036_if4Eq4gHSoPiDmmxIcim0FDPkjWGYlOq.jpg" class="img-fluid" alt="" />
@@ -639,18 +703,18 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section section-bg dark-background">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Contact Us Form</h2>
         <p>We’re here to help with all your car care needs! Whether you’re looking to enhance your vehicle’s performance, protect its exterior, or give it a fresh new look, our team at Cloud 5 Auto Concept is ready to provide expert service and personalized care.</p>
       </div>
       <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6">
             <div class="row gy-4">
               <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Visit Us</h3>
                   <p>Ashramam Rd, Uliyakovil East, Asramam, Kollam, Kerala 691008</p>
@@ -659,7 +723,7 @@
               <!-- End Info Item -->
 
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
                   <p>+91 90722 05000</p>
@@ -668,7 +732,7 @@
               <!-- End Info Item -->
 
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
                   <p>cloud5autoconcepts@mail.com</p>
@@ -679,7 +743,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
@@ -716,13 +780,13 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div>
       <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
                 {
